@@ -14,7 +14,7 @@ const AddClient: React.FC<AddClientProps> = ({ onAddClient }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post("http://3.129.12.254:8085/clients", { name, email });
+      await axios.post("http://3.130.35.128:8085/clients", { name, email });
       onAddClient();
     } catch (error) {
       console.error("Error adding client:", error);
