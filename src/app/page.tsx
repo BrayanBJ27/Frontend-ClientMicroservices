@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 
   const fetchClients = async () => {
     try {
-      const response = await axios.get("http://3.129.12.254:8086/clients");
+      const response = await axios.get("http://3.130.35.128:8086/clients");
       setClients(response.data);
     } catch (error) {
       console.error("Error fetching clients:", error);
