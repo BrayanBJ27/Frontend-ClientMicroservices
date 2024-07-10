@@ -25,7 +25,7 @@ const ClientList: React.FC<ClientListProps> = ({ clients, onUpdateClient }) => {
 
   const handleSave = async (client: Client) => {
     try {
-      await axios.put(`http://3.129.12.254:8087/clients/${client.id}`, { email: newEmail });
+      await axios.put(`http://3.130.35.128/clients/${client.id}`, { email: newEmail });
       setEditingClient(null);
       onUpdateClient();
     } catch (error) {
