@@ -29,7 +29,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-3xl font-bold">ClientesFeliz Management</h1>
+      <h1 className="text-3xl font-bold">ClientesFeliz Management In Real Time</h1>
       <AddClient onAddClient={fetchClients} />
       <button className="bg-blue-500 text-white p-2 mt-2" onClick={fetchClients}>
         List Clients
